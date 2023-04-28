@@ -1,0 +1,358 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-y: scroll;
+}
+
+.website {
+    // max-width: 1920px;
+    min-width: 320px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+    display: grid;
+
+    // (header:fixed) 
+    // 1fr div:main-content 
+    // auto div:footer 
+    grid-template-rows: 1fr auto;
+
+    // grid container padding for mobiles
+    .container {
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            padding: 0 10px;
+        }
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+
+    margin: 0 auto;
+
+    // max-width: 1920px;
+    min-width: 320px;
+
+    >.container {
+        height: 120px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: auto;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+        }
+    }
+}
+
+.main {
+    padding-top: 120px;
+}
+
+// header
+.header-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    >.col-1 {
+        flex-basis: 200px;
+    }
+
+    >.col-2 {
+        flex-grow: 1;
+    }
+
+    >.col-3 {
+        flex-basis: 200px;
+
+        display: flex;
+        justify-content: flex-end;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            display: none;
+        }
+
+        @include media-breakpoint-only(sm) {
+            display: none;
+        }
+
+        @include media-breakpoint-only(xs) {
+            display: none;
+        }
+    }
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(sm) {
+        display: none;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: none;
+    }
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    >.item {
+        margin: 0 19px;
+
+        >.link {
+            text-decoration: none;
+            color: #223242;
+
+            font-size: 16px;
+            font-weight: 400;
+
+            transition: .3s;
+
+            &:hover {
+                color: #05c48b;
+            }
+        }
+    }
+}
+
+.donate-link {
+    text-decoration: none;
+
+    >.donate {
+        width: 180px;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 12px;
+        font-weight: 600;
+        color: #212529;
+
+        border: 1px solid #05c48b;
+        border-radius: 1000px;
+
+        transition: .3s;
+
+        &:hover {
+            background-color: #05c48b;
+            border: 1px solid #05c48b;
+            color: #fff;
+        }
+    }
+}
+
+.logo-link {
+    color: #024c40;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.mobile-nav-btn {
+    display: none;
+    justify-content: flex-end;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        display: flex;
+    }
+
+    @include media-breakpoint-only(sm) {
+        display: flex;
+    }
+
+    @include media-breakpoint-only(xs) {
+        display: flex;
+    }
+
+    .btn {
+        width: 50px;
+        height: auto;
+
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        outline: none;
+
+        cursor: pointer;
+
+        .line {
+            height: 2px;
+            background-color: #657783;
+            margin: 10px 0 10px 0;
+
+            &:first-child {
+                margin: 0 0 10px 0;
+            }
+
+            &:last-child {
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+}
+
+.footer {
+    background: linear-gradient(#f7f7f8, #ecf0fb);
+    border-bottom: 1px solid #d7dde8;
+    border-top: 1px solid #e1e3e5;
+
+    >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            width: auto;
+        }
+
+        @include media-breakpoint-only(xs) {
+            width: auto;
+        }
+    }
+
+    .columns {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .copyright {
+        min-height: 50px;
+        border-top: 1px solid #dddddd;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .col-1 {
+        flex-basis: 300px;
+    }
+
+    .col-2 {
+        flex-grow: 1;
+    }
+
+    .col-3 {
+        flex-basis: 300px;
+    }
+}
+
+.footer-copyright {
+    font-size: 13px;
+    color: #223242;
+    font-weight: 300;
+}
+
+.scroll {
+
+    .header {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+
+        .container {
+            height: 70px;
+
+            .donate {
+                height: 30px;
+            }
+        }
+    }
+
+    .main {
+        padding-top: 70px;
+    }
+}
