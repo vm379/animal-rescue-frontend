@@ -1,0 +1,165 @@
+.footer-logo {
+    color: #024c40;
+    font-family: "SFProDisplayMedium";
+    font-size: 28px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {
+        flex-direction: column;
+        padding: 25px 0;
+    }
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+        padding: 25px 0;
+    }
+
+    .col-1 {
+        flex-basis: 200px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: auto;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+        }
+    }
+
+    .col-2 {
+        flex-grow: 1;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {
+            flex-grow: 0;
+            padding-top: 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-grow: 0;
+            padding-top: 25px;
+        }
+    }
+
+    .col-3 {
+        flex-basis: 200px;
+
+        flex-basis: 200px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: auto;
+            padding-top: 25px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+            padding-top: 25px;
+        }
+    }
+}
+
+.footer-copyright {
+    font-family: "SFProDisplayRegular";
+    font-weight: 300;
+    font-size: 13px;
+    color: #223242;
+}
+
+.footer-titles {
+    text-align: center;
+    font-family: "SFProDisplayRegular";
+    color: #223242;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .description {
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    >.item {
+        margin: 5px 0 5px 0;
+        border-bottom: 1px solid #657783;
+
+        &:first-child {
+            margin: 0 0 5px 0;
+        }
+
+        &:last-child {
+            margin: 5px 0 0 0;
+        }
+
+        >.link {
+            text-decoration: none;
+            color: #657783;
+
+            font-family: "SFProDisplayRegular";
+            font-size: 16px;
+            font-weight: 500;
+
+            transition: .3s;
+
+            &:hover {
+                color: #05c48b;
+                border-bottom: 1px solid #05c48b;
+            }
+        }
+    }
+}

@@ -1,1 +1,2 @@
-console.log('Gulp');
+import "./scroll-header-action.js";
+import "./mobile-menu.js";
