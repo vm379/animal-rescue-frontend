@@ -29,3 +29,19 @@
         url("../../fonts/sf-pro-display/medium/64a2cfb57c4a5df1013e4f2e5bf3eff3.svg#SF Pro Display Regular") format("svg");
     /* iOS 4.1- */
 }
+
+@font-face {
+    font-family: "Rubik", sans-serif;
+    src: url("../../fonts/rubik/35af6dbe749b9704f03282e5a5949253.eot");
+    /* IE9*/
+    src: url("../../fonts/rubik/35af6dbe749b9704f03282e5a5949253.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../../fonts/rubik/35af6dbe749b9704f03282e5a5949253.woff2") format("woff2"),
+        /* chrome、firefox */
+        url("../../fonts/rubik/35af6dbe749b9704f03282e5a5949253.woff") format("woff"),
+        /* chrome、firefox */
+        url("../../fonts/rubik/35af6dbe749b9704f03282e5a5949253.ttf") format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("../../fonts/rubik/35af6dbe749b9704f03282e5a5949253.svg#Rubik") format("svg");
+    /* iOS 4.1- */
+}
