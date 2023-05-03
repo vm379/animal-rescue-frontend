@@ -1,0 +1,116 @@
+.help {
+    background-color: #fafafa;
+    border-top: 1px solid #e8eaeb;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+
+    margin: 0 auto;
+    max-width: 1920px;
+
+    .container {
+        min-height: 350px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.help-columns {
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-only(sm) {
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+    }
+
+    .col-1 {
+        flex-basis: 50%;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: auto;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: auto;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+        }
+    }
+
+    .col-2 {
+        flex-basis: 50%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: auto;
+            margin-top: 45px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: auto;
+            margin-top: 45px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+            margin-top: 45px;
+        }
+
+        .link {
+            text-decoration: none;
+            text-transform: uppercase;
+
+            font-size: 16px;
+            border-bottom: 1px solid #059469;
+            font-family: "SFProDisplayMedium";
+            color: #059469;
+        }
+    }
+}
+
+.help {
+
+    .article {
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Rubik", sans-serif;
+
+            line-height: 25px;
+            color: #223242;
+        }
+    }
+}

@@ -1,16 +1,25 @@
 @import "./variables/variables";
 @import "./functions/breakpoints";
 @import "./fonts/fonts";
+
 @import "./layout/base";
-
-@import "./landing/landing";
-@import "./landing/first";
-
 @import "./header/header";
 @import "./footer/footer";
 
+@import "./landing/landing";
+@import "./landing/first";
+@import "./landing/about";
+@import "./landing/services";
+@import "./landing/help";
+@import "./landing/contacts";
+@import "./landing/faq";
+@import "./landing/last-blog-posts";
+
 @import "./menu/main-menu-mobile";
 @import "./callback/callback-modal";
+
+@import "./preloaders/preloader";
+@import "./preloaders/spinners";
 
 .preloader {
     display: none;
