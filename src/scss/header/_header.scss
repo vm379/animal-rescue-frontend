@@ -86,6 +86,13 @@
             }
         }
     }
+
+    .active {
+
+        >.link {
+            color: #05c48b;
+        }
+    }
 }
 
 .donate-link {
@@ -114,6 +121,10 @@
             border: 1px solid #05c48b;
             color: #fff;
         }
+    }
+
+    .active {
+        color: #05c48b;
     }
 }
 
